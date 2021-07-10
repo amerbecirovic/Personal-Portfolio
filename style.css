@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(media/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin: 0 200px;
+    color: white;
+}
+
+body {
+    background-color: #2F2FA2;
+}
+
+nav {
+    border: 2px solid black;
+    background-color: #F64C72;
+    padding: 20px 20px;
+    margin-right: 20px;
+    right: 0;
+    position: fixed;
+}
+
+nav a {
+    justify-content: center;
+    padding: 20px 10px;
+    color: white;
+}
+
+hr {
+    height: 5px;
+    width: 60%;
+    margin: 0px;
+    background-color: #99738E;
+    border: 2px solid #99738E;
+}
+
+.aboutme {
+    height: auto;
+    width: 60%;
+}
+
+.skills img {
+    background-color: #2F2FA2;
+    height: 50px;
+    width: auto;
+    margin: 10px 20px 10px 0;
+    top: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
