@@ -45,7 +45,7 @@ nav a {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .aboutme img {
