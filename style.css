@@ -40,12 +40,16 @@ nav a {
     color: white;
 }
 
+h3 a {
+    color: white;
+}
+
 .aboutme {
     height: auto;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    display: inline-flex;
+    flex-wrap: nowrap;
+    display: flex;
 }
 
 .aboutme img {
@@ -53,7 +57,6 @@ nav a {
     max-height: 250px;
     border-radius: 30%;
     margin: 20px 20px;
-    display: inline-block;
 }
 
 .aboutme.container {
@@ -65,11 +68,28 @@ nav a {
     display: flex;
 }
 
+.collapsible {
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: #2F2FA2;
+    font-size: 18px;
+    font-family: 'Oswald';
+    padding-bottom: 20px;
+}
+
+.projectcontent {
+    overflow: hidden;
+    margin-left: 50px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
 .projects p{
     max-width: 60%;
 }
 
-.skills img {
+.logo {
     background-color: #2F2FA2;
     height: 50px;
     width: auto;
@@ -78,8 +98,18 @@ nav a {
     position: relative;
 }
 
-.skills ul {
-    display: inline-block;
+table {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+td {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#skillstable td img {
+    vertical-align: middle;
 }
 
 h1 {
@@ -91,11 +121,41 @@ h2 {
     font-size: 2rem;
 }
 
+#aboutme {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+#projects {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+#skills {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+.collapsible:after {
+    content: '\2192'; 
+    font-size: 13px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+  
+  .active:after {
+    content: "\2193"; /* Unicode character for "minus" sign (-) */
+  }
+
 @media only screen and (max-width: 480px) {
     .aboutme.container {
-        display: inline-flex;
+        display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .aboutme {
+        flex-wrap: wrap;
     }
     html {
         margin-left: 0;
